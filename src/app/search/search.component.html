@@ -10,7 +10,17 @@
 </form>
 
 <div *ngIf="searchRes">
-	<div *ngFor="let res of searchRes">
-		{{res.name}}
+	<div *ngFor="let artist of searchRes">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="search_res well">
+					<h4>{{artist.name}}</h4>
+					<div>
+						<strong>Genre: </strong>
+						<span *ngFor="let genre of artist.genres">{{genre}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
