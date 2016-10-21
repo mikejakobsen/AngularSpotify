@@ -9,13 +9,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 
 import { routing } from './app.routing';
+import { ArtistComponent } from './artist/artist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
