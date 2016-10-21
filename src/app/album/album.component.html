@@ -1,8 +1,8 @@
 <div id="album" *ngIf="album">
-	<header class="album-header">
+	<header class="album_header">
 		<div class="row">
 			<div class="col-md-4">
-				<img class="album-thumb" src="{{album.images[0].url}}">
+				<img class="album_thumb" src="{{album.images[0].url}}">
 			</div>
 			<div class="col-md-8">
 				<h4 *ngIf="album.artists.length > 0"><span *ngFor="let artist of album.artists">{{artist.name}}</span></h4>
@@ -13,7 +13,7 @@
 		</div>    
 	</header>
 
-	<div class="album-tracks">
+	<div class="album_tracks">
 		<h2>Album Tracks</h2>
 		<div *ngFor="let track of album.tracks.items">
 			<div class="well">
