@@ -1,11 +1,12 @@
-import {ModuleWithProviders} from '@angular/core';
+import {ModuleWithProviders}  from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
 
-import { SearchComponent } from './search/search.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutComponent } from './about/about.component';
-import { ArtistComponent } from './artist/artist.component';
+import { SearchComponent }    from './search/search.component';
+import { NavbarComponent }    from './navbar/navbar.component';
+import { AboutComponent }     from './about/about.component';
+import { ArtistComponent }    from './artist/artist.component';
+import { AlbumComponent }     from './album/album.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +20,10 @@ const appRoutes: Routes = [
   {
     path: 'artist/:id',
     component: ArtistComponent
+  },
+  {
+    path: 'album:id',
+    component: AlbumComponent
   }
 ];
 
