@@ -8,5 +8,4 @@ import {SpotifyService} from './spotify.service';
   providers: [SpotifyService]
 })
 export class AppComponent {
-  title = 'Live update?';
 }
